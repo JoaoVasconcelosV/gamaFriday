@@ -1,0 +1,232 @@
+:root {
+  --red: #F47A7A;
+  --background: #454040;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins";
+}
+
+button {
+  cursor: pointer;
+}
+
+body {
+  background-color: var(--background);     
+}
+
+header {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  width: 100%;
+
+  margin-top: 15px;  
+}
+
+header h1 {
+  color: white;    
+  font: inherit;  
+  font-size: 36px;
+  font-family: 'Titan One', cursive;
+}
+
+.cadastro {
+  width: 100%;
+  
+  position: absolute;
+  display: flex;
+  justify-content: center;
+
+  margin-top: 100px;
+}
+
+.cadastro span {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+}
+
+#form {
+  width: 100%;
+  
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  margin-top: 60px;
+}
+
+#form input {
+  width: 450px;
+  height: 40px;
+
+  outline: none;
+  border: 0px;
+  border-radius: 8px;
+
+  padding: 10px;
+  font-size: 24px;  
+}
+
+#form button {  
+  background-color: transparent;
+
+  height: 40px;
+  width: 150px;
+
+  color: #fff;
+  margin-top: 20px;
+  font-size: 18px;
+
+  border-radius: 8px;
+  border: 1px solid #000;
+  outline: none;
+}
+
+.content .img-home {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;  
+}
+
+.content .img-home #eletro {
+  position: absolute; 
+  margin-top: 300px; 
+}
+
+.content .products {
+  display: flex;
+  align-items: center;  
+  flex-direction: column;
+
+  margin-top: 150px;  
+}
+
+.content .products h1 {
+  color: white;
+  font: inherit;
+  font-size: 36px;
+  font-family: 'Titan One', cursive; 
+  text-align: center; 
+}
+
+.content .products h1 span {
+  font-family: 'Titan One', cursive;
+  color: var(--red);
+}
+
+.content #red-tablet {
+  display: none;
+}
+
+.content #red-mobile {
+  display: none;
+}
+
+.content .cards {
+  display: flex;
+  justify-content: center;
+  margin: 0 200px;
+  flex-wrap: wrap;
+}
+
+.content .cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  color: #fff;
+  margin: 20px;
+}
+
+.content .cards .card button {  
+  width: 100%;
+  height: 45px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color:#9cff77;
+
+  border: 0px;
+  border-radius: 8px;
+
+  padding: 10px;
+  
+  font-size: 34px;
+  color: #fff;  
+}
+
+.content .cards .card button:hover {
+  background-color:  #44ff00;
+}
+
+.content .cards .card img {
+  height: 250px;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1919px) {
+  .content .img-home img {
+    height: 280px
+  }
+
+  .content .cards {
+    margin: 0 100px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .content #red-tablet {
+    display: inline;
+  }
+
+  .content #red-web{
+    display: none;
+  }
+  
+  .content #red-mobile {
+    display: none;
+  }
+
+  .content .cards {
+    margin: 0 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .content #red-mobile {
+    display: inline;
+  }
+
+  .content #red-web{
+    display: none;
+  }
+  
+  .content #red-tablet {
+    display: none;
+  }
+
+  #form input {
+    width: 300px;
+  }
+
+  .content .img-home #eletro{
+    height: 200px
+  }
+
+  #form input {
+    margin-top: 27px;
+  }
+
+  .cadastro span {
+    font-size: 20px;
+  }
+}
